@@ -1,0 +1,57 @@
+export * from "./colors";
+
+export const theme = {
+  font: {
+    light: 300,
+    normal: 400,
+    semiBold: 500,
+    bold: 700,
+    bk: "DIN Alternate",
+    plk: "DIN Alternate",
+    dinPro: "DIN Alternate",
+  },
+  fontSize: {
+    xxxs: "12px",
+    xxs: "16px",
+    xs: "20px",
+    sm: "24px",
+    md: "28px",
+    lg: "32px",
+    xl: "36px",
+    xxl: "40px",
+    xxxl: "48px",
+  },
+  spacing: {
+    none: "0px",
+    xxxs: "8px",
+    xxs: "16px",
+    xs: "24px",
+    sm: "32px",
+    md: "40px",
+    lg: "48px",
+    xl: "56px",
+    xxl: "64px",
+    xxxl: "72px",
+    huge: "80px",
+    giant: "120px",
+  },
+  widthButton: {
+    lg: "512px",
+    md: "384px",
+    sm: "190px",
+    xs: "120px",
+    xxs: "48px",
+  },
+  ZIndex: {
+    base: 10,
+    dropdown: 15,
+    menu: 20,
+    overlay: 30,
+    modal: 40,
+  },
+  breakpoints: {
+    small: "360px",
+    medium: "768px",
+    large: "1440px",
+  },
+};
