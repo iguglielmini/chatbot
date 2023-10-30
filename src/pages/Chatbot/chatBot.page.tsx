@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MessageBox } from "react-chat-elements";
 import * as S from "./styles";
 import { useNavigate } from "react-router-dom";
+import { HeaderComponent } from "../../components";
 
 const ChatBot: React.FC = () => {
   const navigate = useNavigate();
@@ -27,10 +28,11 @@ const ChatBot: React.FC = () => {
 
   return (
     <S.Container>
-      <S.Header>
-        <S.Back onClick={() => navigate("/")}>Voltar</S.Back>
-        <S.Title>R2-D2</S.Title>
-      </S.Header>
+      <HeaderComponent
+        title="ChatbotGPT"
+        goback={() => navigate("/")}
+        goBackTitle="Voltar para Home"
+      />
       <div>
         <div>
           {messages.map((msg, index) => (
